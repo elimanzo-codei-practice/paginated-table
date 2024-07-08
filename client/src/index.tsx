@@ -1,7 +1,7 @@
-import App from 'App';
-import { init as initAnalytics } from 'instrumentation/analytics';
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
+import { init as initAnalytics } from './instrumentation/analytics';
+import App from './App';
 import './index.css';
 
 

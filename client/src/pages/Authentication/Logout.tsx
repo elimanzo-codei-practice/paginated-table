@@ -1,7 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import { reset } from 'instrumentation/analytics';
-import { auth } from 'utils/spaUrls';
 import React from 'react';
+import { reset } from '../../instrumentation/analytics';
+import { auth } from '../../utils/spaUrls';
 
 
 export default function Logout() {

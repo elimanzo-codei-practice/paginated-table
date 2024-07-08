@@ -3,13 +3,13 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
-import exceptionImg from 'assets/error-500.png';
-import BrandingBorder from 'components/Layouts/BrandingBorder';
-import { ErrorCodes, helpEmail } from 'utils/errorUtils';
-import { Logger } from 'utils/logger';
-import { homepage } from 'utils/spaUrls';
 import React, { ErrorInfo, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import exceptionImg from '../../assets/error-500.png';
+import BrandingBorder from '../Layouts/BrandingBorder';
+import { ErrorCodes, helpEmail } from '../../utils/errorUtils';
+import { Logger } from '../../utils/logger';
+import { homepage } from '../../utils/spaUrls';
 
 
 interface IProps {

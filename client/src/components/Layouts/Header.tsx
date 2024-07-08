@@ -2,7 +2,7 @@ import AppBar from '@mui/material/AppBar';
 import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
 import { useTheme } from '@mui/material/styles';
-import UserSettings from 'components/Layouts/UserSettings';
+import UserSettings from './UserSettings';
 
 
 export default function Header() {

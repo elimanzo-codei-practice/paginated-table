@@ -6,9 +6,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Tooltip from '@mui/material/Tooltip';
-import { UserMenuTree } from 'utils/NavTree';
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+import { UserMenuTree } from '../../utils/NavTree';
 
 
 export default function UserSettings() {

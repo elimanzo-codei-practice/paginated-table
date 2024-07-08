@@ -2,12 +2,12 @@ import { useAuth0 } from '@auth0/auth0-react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Hidden from '@mui/material/Hidden';
-import LandingBg from 'assets/LandingBg';
-import PageHeader from 'components/Common/PageHeader';
-import Spinner from 'components/Common/Spinner';
-import { homepage } from 'utils/spaUrls';
 import GoogleButton from 'react-google-button';
 import { Navigate } from 'react-router-dom';
+import LandingBg from '../../assets/LandingBg';
+import PageHeader from '../../components/Common/PageHeader';
+import Spinner from '../../components/Common/Spinner';
+import { homepage } from '../../utils/spaUrls';
 
 
 export default function Login() {

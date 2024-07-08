@@ -2,10 +2,10 @@
 import { Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { v4 as uuidv4 } from 'uuid';
-import EmptyState from 'components/Common/EmptyState';
-import PageHeader from 'components/Common/PageHeader';
-import Spinner from 'components/Common/Spinner';
-import { allItems } from 'utils/NavTree';
+import { allItems } from '../../utils/NavTree';
+import EmptyState from './EmptyState';
+import PageHeader from './PageHeader';
+import Spinner from './Spinner';
 
 
 type Props<T> = {

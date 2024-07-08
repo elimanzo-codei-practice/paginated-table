@@ -1,5 +1,5 @@
-import Toast from 'components/Common/Toast';
 import React from 'react';
+import Toast from './Toast';
 
 
 interface IAlert {

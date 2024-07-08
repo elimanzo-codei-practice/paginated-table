@@ -1,4 +1,4 @@
-import Logout from 'pages/Authentication/Logout';
+import Logout from '../Logout';
 
 
 describe('Logout', () => {

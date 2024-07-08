@@ -1,14 +1,14 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import Spinner from 'components/Common/Spinner';
-import Toast from 'components/Common/Toast';
-import { identifyUser } from 'instrumentation/analytics';
-import { save } from 'utils/cacheUtils';
-import { CacheKeys } from 'utils/constants';
-import { ErrorCodes } from 'utils/errorUtils';
-import { Logger } from 'utils/logger';
-import { auth, homepage } from 'utils/spaUrls';
-import React from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
+import React from 'react';
+import Spinner from '../../../components/Common/Spinner';
+import Toast from '../../../components/Common/Toast';
+import { identifyUser } from '../../../instrumentation/analytics';
+import { save } from '../../../utils/cacheUtils';
+import { CacheKeys } from '../../../utils/constants';
+import { ErrorCodes } from '../../../utils/errorUtils';
+import { Logger } from '../../../utils/logger';
+import { auth, homepage } from '../../../utils/spaUrls';
 
 
 const audience = process.env.REACT_APP_AUTH0_AUDIENCE || '';

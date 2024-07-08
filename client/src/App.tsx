@@ -2,14 +2,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Router from 'Router';
-import AppAlerts from 'components/Common/AppAlerts';
-import ErrorBoundary from 'components/Common/ErrorBoundary';
-import Auth0ProviderWithHistory from 'pages/Authentication/components/Auth0-provider-with-history';
-import Theme from 'theme';
-import { CacheKeys } from 'utils/constants';
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import Router from './Router';
+import ErrorBoundary from './components/Common/ErrorBoundary';
+import Auth0ProviderWithHistory from './pages/Authentication/components/Auth0-provider-with-history';
+import Theme from './theme';
+import { CacheKeys } from './utils/constants';
+import AppAlerts from './components/Common/AppAlerts';
 
 
 const queryClient = new QueryClient();

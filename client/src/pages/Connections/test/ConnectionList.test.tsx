@@ -1,4 +1,4 @@
-import ConnectionList from 'pages/Connections/ConnectionList';
+import ConnectionList from '../ConnectionList';
 
 
 describe('ConnectionList', () => {

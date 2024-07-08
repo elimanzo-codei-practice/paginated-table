@@ -1,4 +1,4 @@
-import { Logger } from 'utils/logger';
+import { Logger } from './logger';
 
 
 export function save(key: string, value: string) {

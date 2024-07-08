@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import EmptyBox from 'assets/EmptyBox';
-import EmptyStreet from 'assets/EmptyStreet';
+import EmptyBox from '../../assets/EmptyBox';
+import EmptyStreet from '../../assets/EmptyStreet';
 
 
 export default function EmptyState() {

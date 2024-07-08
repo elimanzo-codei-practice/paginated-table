@@ -1,8 +1,8 @@
 import { Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import PageHeader from 'components/Common/PageHeader';
-import { connections } from 'utils/spaUrls';
 import { Link } from 'react-router-dom';
+import PageHeader from '../../components/Common/PageHeader';
+import { connections } from '../../utils/spaUrls';
 
 
 export default function HomePage() {

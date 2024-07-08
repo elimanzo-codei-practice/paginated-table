@@ -11,11 +11,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-import logo from 'assets/logo.png';
-import logoSm from 'assets/logoSm.png';
-import { SideNavCtx } from 'components/Layouts/Borders';
-import { NavTree } from 'utils/NavTree';
 import React from 'react';
+import logo from '../../assets/logo.png';
+import logoSm from '../../assets/logoSm.png';
+import { SideNavCtx } from './Borders';
+import { NavTree } from '../../utils/NavTree';
 
 
 export default function SideNav() {

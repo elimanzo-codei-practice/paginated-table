@@ -1,6 +1,6 @@
 import { Auth0Provider } from '@auth0/auth0-react';
-import { auth } from 'utils/spaUrls';
 import { ReactNode } from 'react';
+import { auth } from '../../../utils/spaUrls';
 
 
 const landingPadUri = `${window.location.origin}${auth.landingPad}`;

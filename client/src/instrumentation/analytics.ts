@@ -1,6 +1,6 @@
-import { EEvents, IIdentifyUserArgs, TEventProperties } from 'instrumentation/analytics.types';
 import mixpanel from 'mixpanel-browser';
 import posthog from 'posthog-js';
+import { EEvents, IIdentifyUserArgs, TEventProperties } from './analytics.types';
 
 
 const isDev = process.env.REACT_APP_ENV === 'DEV';

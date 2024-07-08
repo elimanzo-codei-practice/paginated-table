@@ -1,4 +1,4 @@
-import { CacheKeysModel } from 'utils/constants.types';
+import { CacheKeysModel } from './constants.types';
 
 // eslint-disable-next-line import/prefer-default-export
 export const CacheKeys: CacheKeysModel = {

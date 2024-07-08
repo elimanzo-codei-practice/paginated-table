@@ -5,9 +5,9 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { blueGrey } from '@mui/material/colors';
-import BreadcrumbsNavigation, { TBreadcrumb } from 'components/Common/BreadcrumbsNavigation';
-import { AllPageTitles } from 'utils/NavTree';
 import { Link } from 'react-router-dom';
+import BreadcrumbsNavigation, { TBreadcrumb } from './BreadcrumbsNavigation';
+import { AllPageTitles } from '../../utils/NavTree';
 
 
 type Props = {

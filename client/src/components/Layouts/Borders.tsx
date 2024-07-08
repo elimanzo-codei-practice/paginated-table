@@ -1,9 +1,9 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-import Header from 'components/Layouts/Header';
-import SideNav from 'components/Layouts/SideNav';
 import React from 'react';
+import Header from './Header';
+import SideNav from './SideNav';
 
 
 interface ISideNavCtx {
