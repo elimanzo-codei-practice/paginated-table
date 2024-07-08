@@ -12,8 +12,13 @@ export default function HomePage() {
         <PageHeader title='Getting Started' />
       </Grid>
       <Grid item xs={12}>
-        <Button component={Link} to={connections.list} variant='contained' color='primary'>
+        <Button component={Link} to={connections.games} variant='contained' color='primary'>
           See Video Games!
+        </Button>
+      </Grid>
+      <Grid item xs={12}>
+        <Button component={Link} to={connections.users} variant='contained' color='primary'>
+          See Our Users!
         </Button>
       </Grid>
     </Grid>

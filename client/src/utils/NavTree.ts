@@ -19,10 +19,15 @@ type TAllItems = {
 };
 
 export const allItems: TAllItems = {
-  connectionsList: {
+  gamesList: {
     name: 'Games',
     Icon: SettingsInputComponent,
-    spaUrl: spaUrl.connections.list,
+    spaUrl: spaUrl.connections.games,
+  },
+  usersList: {
+    name: 'Users',
+    Icon: SettingsInputComponent,
+    spaUrl: spaUrl.connections.users,
   },
   landingPage: {
     name: 'Landing Page',
@@ -38,7 +43,8 @@ export const allItems: TAllItems = {
 
 export const NavTree: TNavTreeModel = [allItems.landingPage];
 
-export const UserMenuTree: TNavTreeModel = [allItems.connectionsList, allItems.logout];
+export const UserMenuTree: TNavTreeModel = [
+  allItems.gamesList, allItems.usersList, allItems.logout];
 
 const allTitles = Object.values(allItems).map((item) => item.name);
 

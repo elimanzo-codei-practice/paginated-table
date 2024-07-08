@@ -1,4 +1,4 @@
-import ConnectionList from '../ConnectionList';
+import ConnectionList from '../GameList';
 
 
 describe('ConnectionList', () => {

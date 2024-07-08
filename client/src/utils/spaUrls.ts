@@ -5,7 +5,8 @@ export const auth = {
 };
 
 export const connections = {
-  list: '/connections/list',
+  games: '/connections/games',
+  users: '/connections/users',
 };
 
 export const homepage = '/welcome';

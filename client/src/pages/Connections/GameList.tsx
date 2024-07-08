@@ -24,7 +24,7 @@ const fetchGames = async (searchInput = '', page = 1) => {
 };
 
 
-export default function ConnectionList() {
+export default function GameList() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(searchQuery);
@@ -54,7 +54,7 @@ export default function ConnectionList() {
 
   return (
     <ListPage
-      headerItem={allItems.connectionsList}
+      headerItem={allItems.gamesList}
       list={data ?? []}
       isLoading={isLoading}
       error={error}
