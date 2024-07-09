@@ -3,6 +3,9 @@
 Create a React component that fetches data from a RESTful API endpoint and displays it in a table. Implement pagination to allow the user to navigate through the data. Ensure the table is accessible and follows WCAG standards.
 
 ### Feedback / Response
+![React Game Table](https://i.gyazo.com/f7f2c9ca1ee6ac7ff51c2b2d222a929c.png)
+
+1. I decided to use the previous game code to make a table out of it, and refactored games list to render lists instead of general items
 
 ### Stack: React, Material UI { using ts(x) }
 
