@@ -2,11 +2,13 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useState } from 'react';
 import { debounce } from 'lodash';
-import { Grid } from '@mui/material';
-import { v4 as uuidv4 } from 'uuid';
+import {
+  Grid,
+  Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow,
+} from '@mui/material';
 import ListPage from '../../components/Common/ListPage';
 import { allItems } from '../../utils/NavTree';
-import VideoGame, { VideoGameProps } from '../../components/VideoGame/VideoGame';
+import VideoGameRow, { VideoGameProps } from '../../components/VideoGameRow/VideoGameRow';
 
 
 const fetchGames = async (searchInput = '', page = 1) => {
@@ -25,8 +27,7 @@ const fetchGames = async (searchInput = '', page = 1) => {
   return response.json();
 };
 
-
-export default function GameList() {
+export default function GameTable() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(searchQuery);
@@ -54,20 +55,31 @@ export default function GameList() {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
-  const renderList = (items: VideoGameProps[]): JSX.Element => (
-    <>
-      {items.map((item) => (
-        <Grid item xs={12} key={uuidv4()}>
-          <VideoGame {...item} />
-        </Grid>
-      ))}
-    </>
+  const renderTable = (items: VideoGameProps[]): JSX.Element => (
+    <Grid item xs={12}>
+      <TableContainer component={Paper} style={{ maxWidth: '100%' }}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Cover URI</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>Summary</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {items.map((item) => (
+              <VideoGameRow {...item} />
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </Grid>
   );
 
 
   return (
     <ListPage
-      headerItem={allItems.gamesList}
+      headerItem={allItems.gamesTable}
       list={data ?? []}
       isLoading={isLoading}
       error={error}
@@ -76,7 +88,7 @@ export default function GameList() {
       handlePrevPage={handlePrevPage}
       searchQuery={searchQuery}
       handleSearchChange={handleSearchChange}
-      renderItems={renderList}
+      renderItems={renderTable}
     />
   );
 }

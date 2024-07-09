@@ -6,7 +6,7 @@ export const auth = {
 
 export const connections = {
   games: '/connections/games',
-  users: '/connections/users',
+  gamesTable: '/connections/games_table',
 };
 
 export const homepage = '/welcome';

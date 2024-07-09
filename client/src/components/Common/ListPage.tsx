@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import { v4 as uuidv4 } from 'uuid';
 import { allItems } from '../../utils/NavTree';
 import EmptyState from './EmptyState';
 import PageHeader from './PageHeader';
@@ -18,7 +17,7 @@ type Props<T> = {
   handlePrevPage: () => void;
   searchQuery: string;
   handleSearchChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  renderItem: (item: T) => JSX.Element;
+  renderItems: (items: T[]) => JSX.Element;
 };
 
 export default function ListPage<T>(props: Props<T>) {
@@ -33,7 +32,7 @@ export default function ListPage<T>(props: Props<T>) {
         type='text'
         value={props.searchQuery}
         onChange={props.handleSearchChange}
-        placeholder='Search games...'
+        placeholder={`Search ${props.headerItem.name}...`}
         style={{
           padding: '10px',
           margin: '10px 0',
@@ -74,11 +73,7 @@ function RenderList<T>(props: Omit<Props<T>, 'headerItem'>) {
   else {
     return (
       <>
-        {props.list.map((item) => (
-          <Grid item xs={12} key={uuidv4()}>
-            {props.renderItem(item)}
-          </Grid>
-        ))}
+        {props.renderItems(props.list)}
         <PaginationControls
           currentPage={props.currentPage}
           handleNextPage={props.handleNextPage}

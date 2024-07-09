@@ -17,8 +17,8 @@ export default function HomePage() {
         </Button>
       </Grid>
       <Grid item xs={12}>
-        <Button component={Link} to={connections.users} variant='contained' color='primary'>
-          See Our Users!
+        <Button component={Link} to={connections.gamesTable} variant='contained' color='primary'>
+          See Our Games Table!
         </Button>
       </Grid>
     </Grid>
